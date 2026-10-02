@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>putriclara-profile</title>
+
+    <style>
+        /* 1. Pengaturan Dasar Halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f5f0; /* Warna background cream pastel */
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Kotak Profil (Card) */
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px; /* Lebar maksimal kotak */
+            padding: 30px 20px;
+            border-radius: 20px; /* Sudut melengkung */
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+        }
+
+        /* 3. Foto Profil Bulat */
+        .card img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%; /* Membuat foto jadi lingkaran */
+            margin-bottom: 15px;
+            border: 3px solid #f0eae1;
+        }
+
+        /* 4. Judul & Teks */
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #d4a373; /* Warna aksen cokelat hangat */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+
+        /* 5. Daftar Hobi */
+        ul {
+            list-style: none; /* Menghilangkan titik hitam bullet */
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px; /* Jarak antar hobi */
+        }
+
+        li {
+            background-color: #faedcd; /* Warna chip hobi */
+            color: #5c4e3c;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 13px;
+        }
+
+        /* 6. Tombol Link Sosial Media */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #d4a373;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            background-color: #bc8a5f; /* Warna saat tombol ditunjuk kursor */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kotak Utama Profil -->
+    <div class="card">
+        <img src="claraputri.jpeg" alt="Foto Putri Clara">
+        
+        <h1>Welcome to my profile</h1>
+        
+        <p>
+            Hi! I'm <strong>Putri Clara</strong>, and I'm passionate about Photography. Welcome to my personal page!
+        </p>
+
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Traveling</li>
+            <li>Exercises</li>
+            <li>Photography</li>
+            <li>Journaling</li>
+            <li>Art</li>
+        </ul>
+
+        <h2>Connect With Me</h2>
+        <p>WhatsApp: 081379553795</p>
+        
+        <div class="links">
+            <a href="https://www.instagram.com/cllaraaputri_" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@cllaraaputri" target="_blank">TikTok</a>
+        </div>
+    </div>
+
+</body>
+</html>
