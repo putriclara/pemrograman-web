@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Claire.Archive untuk memesan sesi foto. Alamat, media sosial, peta, dan formulir kontak.">
+  <title>Kontak &amp; Pemesanan | claire.archive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">claire<span>.archive</span></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menuUtama" aria-label="Buka menu navigasi">&#9776;</button>
+      <nav class="nav" id="menuUtama" aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner" aria-labelledby="judul-halaman">
+      <div class="container">
+        <h1 id="judul-halaman">Hubungi Kami</h1>
+        <p>Ceritakan kebutuhan Anda, kami balas dalam 1x24 jam.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="judul-info">
+      <div class="container kontak-grid">
+        <article>
+          <h2 id="judul-info">Informasi Kontak</h2>
+          <ul class="info-list">
+            <li><strong>Alamat:</strong> Jl. Adhyaksa No. 9, Kacang Pedang, Gerunggang, Kota Pangkal Pinang, Kepulauan Bangka Belitung 33684, Indonesia</li>
+            <li><strong>WhatsApp:</strong> 0813-7955-3795</li>
+            <li><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=claire.archive00@gmail.com&su=Tanya%20Layanan%20Claire.Archive" target="_blank" rel="noopener">claire.archive00@gmail.com</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/claire.achive0?exln=MTYyN2twbmVhdmQ4bA==" target="_blank" rel="noopener">@claire.archive0</a></li>
+            <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/" target="_blank" rel="noopener">@claire.archive0a</a></li>
+          </ul>
+
+          <div class="tabel-wrap">
+            <table>
+              <caption>Jam operasional</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Hari</th>
+                  <th scope="col">Jam</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Senin - Jumat</th>
+                  <td>09.00 - 17.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sabtu</th>
+                  <td>09.00 - 15.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Minggu</th>
+                  <td>Khusus pemesanan acara</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article>
+          <h2>Lokasi Studio</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2658.2969834001883!2d106.10393910955847!3d-2.1246566834461738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e22c125a0f4c45f%3A0x61d9605e6f5c65f1!2sSekolah%20Tinggi%20Ilmu%20Ekonomi%20Perguruan%20Tinggi%20Bangka%20-%20STIE%20PERTIBA%20-%20Kampus%20Pertama%20dan%20Terbaik%20Bangka%20Belitung!5e0!3m2!1sid!2sid!4v1794673952370!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="judul-form">
+      <div class="container">
+        <div class="section-judul">
+          <h2 id="judul-form">Formulir Pemesanan</h2>
+          <p>Isi semua kolom di bawah ini. Kami akan menghubungi Anda untuk konfirmasi jadwal.</p>
+        </div>
+
+        <form class="form-kontak" id="formKontak" action="#" method="get">
+          <p class="pesan-sukses" id="pesanSukses" role="status">Terima kasih! Pesan Anda sudah kami terima dan akan segera dibalas.</p>
+
+          <div class="form-grup">
+            <label for="nama">Nama lengkap</label>
+            <input type="text" id="nama" name="nama" required minlength="3" maxlength="60" autocomplete="name">
+            <p class="pesan-error" id="error-nama"></p>
+          </div>
+
+          <div class="form-grup">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <p class="pesan-error" id="error-email"></p>
+          </div>
+
+          <div class="form-grup">
+            <label for="hp">Nomor HP</label>
+            <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}" title="Masukkan 10 sampai 13 digit angka tanpa spasi atau tanda hubung" inputmode="numeric" autocomplete="tel">
+            <span class="petunjuk">Hanya angka, 10 sampai 13 digit.</span>
+            <p class="pesan-error" id="error-hp"></p>
+          </div>
+
+          <div class="form-grup">
+            <label for="layanan">Jenis layanan</label>
+            <select id="layanan" name="layanan" required>
+              <option value="">-- Pilih layanan --</option>
+              <option value="wisuda">Foto Wisuda</option>
+              <option value="prewedding">Prewedding</option>
+              <option value="pernikahan">Pernikahan</option>
+              <option value="keluarga">Foto Keluarga</option>
+              <option value="produk">Foto Produk UMKM</option>
+              <option value="event">Liputan Event</option>
+              <option value="profil">Foto Profil</option>
+            </select>
+            <p class="pesan-error" id="error-layanan"></p>
+          </div>
+
+          <div class="form-grup">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" required minlength="10" maxlength="500"></textarea>
+            <span class="petunjuk">Minimal 10 dan maksimal 500 karakter.</span>
+            <p class="pesan-error" id="error-pesan"></p>
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <h2>Claire.Archive</h2>
+          <p>Jasa fotografi wisuda, prewedding, pernikahan, keluarga, produk, dan event.</p>
+        </div>
+        <nav aria-label="Navigasi footer">
+          <ul class="footer-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="hak-cipta">&copy; 2026 claire.archive</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
